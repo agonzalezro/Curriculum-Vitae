@@ -1,0 +1,118 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+%\linespread{1.3}
+
+\usepackage{url}
+\usepackage{hyperref}
+
+% classic, casual or empty
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[grey]{classic}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[spanish,english]{babel}
+\usepackage{datetime}
+\newcommand{\revision}{\twodigit\day\twodigit\month\the\year}
+
+% adjust the page margins
+\usepackage[scale=.85]{geometry}
+\linespread{1.1}
+\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Álex}
+\familyname{\color{addresscolor}González}
+\title{revisión \revision}        % optional, remove the line if not wanted
+\address{c/ Miñagustín, 12, 2ºA}{37001 -- Salamanca}    % optional, remove the line if not wanted
+\mobile{(+34) 659596991}                    % optional, remove the line if not wanted
+%\phone{(+34) 923995055}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{agonzalezro@gmail.com}                      % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[64pt]{foto}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{\footnotesize{python, django, php, mysql, html, c, c++, div, bash scripting, j2me, j2se, javascript, android, windos mobile, iphone, melsec medoc, visual basic, inkscape, gimp, corel draw, photoshop, flash, linux, windows, osx, freebsd, access, openoffice, hotspot, dns, firewall, samba, squid, apache, cyrus, squirrelmail, gtk, pygtk, gtkmozembed, mojo, webkit\ldots}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%FIX footnote problems
+\makeatletter\newcommand\@makefntext[1]{\parindent 1em\noindent\hb@xt@1.8em{\hss\@makefnmark}#1}\makeatother
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+
+\section{Experiencia profesional}
+\cventry{04/2010--Act.}{Director tecnológico}{lukkom}{}{}{Desarrollo de la plataforma web y API REST bajo el framework django. Asesoría en gerencia. Labores secundarias en sistemas.}
+
+\cventry{03/2009--Act.}{Chief Executive Officer (CEO)}{mirblu S.L.}{}{}{Labores de desarrollo en varios lenguajes entre los que se encuentran: Python, Java, Bash Scripting y Visual Basic. Así como labores típicas de administración y gestión de empresas.}
+
+\cventry{12/2008--06/2009, 12/2007--06/2008}{Becario Movente}{Universidad Pontificia de Salamanca y Fundación Caja Duero\footnotemark}{}{}{Realización de un proyecto para plataformas móviles programado sobre j2me: un BPS (bluetooth position system) con cálculo de rutas óptimas entre dos puntos de un complejo de edificios.}
+\footnotetext{Dra. Encarna Beato, coordinadora de proyectos Movente. \href{mailto://ebeatogu@upsa.es}{\texttt{$<$ebeatogu@upsa.es$>$}}} 
+
+\cventry{10/2008--06/2009, 10/2005--06/2007}{Becario de aulas}{Universidad Pontificia de Salamanca\footnotemark}{}{}{Responsable del buen uso de las aulas de ordenadores de la UPSA.\\Becario del laboratorio de redes, colaborando en la configuración e instalación de equipos de red.}
+\footnotetext{Dr. Mariano Raboso, coordinador de las becas de colaboración. \href{mailto://mrabosoma@upsa.es}{\texttt{$<$mrabosoma@upsa.es$>$}}}
+
+\cventry{07/2008}{Profesor}{PC Carrier\footnotemark}{}{}{Profesor de un curso subvencionado por la Xunta de Galicia sobre bases de datos relacionales en OpenOffice.org Base.}
+\footnotetext{Sonia Sainz, coordinadora de profesores. \href{mailto://soniasainz@pcarrier.com}{\texttt{$<$soniasainz@pcarrier.com$>$}}}
+
+\cventry{10/2007--12/2008}{Becario tecnoduero}{Fundación Caja Duero}{}{}{Apoyo docente y técnico a la alfabetización digital de colectivos desfavorecidos.}
+
+\cventry{06/2007--08/2007}{Responsable técnico del aula virtual del Campus Fórmate y apoyo técnico a la infraestructura docente presencial}{Matchmind S.L.\footnotemark}{}{}{Responsable del LMS Moodle para la gestión del aula virtual del Campus Fórmate: contenidos, modificación de la CSS, pequeños cambios en el código PHP del LMS\ldots \\ Instalación de diversos serv    idores: Apache Tomcat, Subversion, exim4 con clamav, spamassasin, y SquirrelMail, Firewall con Iptables y Squid\ldots}
+\footnotetext{D. Arturo Pérez, gerente de la Unidad de Formación. \href{mailto://arperez@matchmind.es}{\texttt{$<$arperez@matchmind.es$>$}}}
+
+\cventry{06/2006--07/2006}{Profesor}{Academia Universitaria}{}{}{Clases particulares en el lenguaje de programación C a alumnos de Estadística.}
+
+\cventry{03/2004--07/2004}{Técnico en prácticas}{Regox, servicios informáticos}{}{}{Administrador del servidor de la empresa (regox.net) y de tesdai.com principalmente, diseño gráfico de publicidad, montaje de equipos, cableado de redes\ldots}
+
+
+\section{Formación}
+\subsection{Académica}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{09/2009--07/2010}{Experto en el desarrollo de sistema para el comercio electrónico}{Universidad de Salamanca}{}{}{}
+\cventry{10/2007--06/2009}{Ingeniería Superior en Informática}{Universidad Pontificia de Salamanca}{}{}{}
+\cventry{10/2005--10/2007}{Ingeniería Técnica en Informática de Sistemas}{Universidad Pontificia de Salamanca}{}{}{}
+\cventry{07/2002--07/2004}{Formación profesional de grado superior en administración de sistemas informáticos}{Centro de formación profesional Tesdai}{}{}{}
+
+\subsection{No académica}
+\cventry{02/2009}{Curso de programación sobre iPhone}{Universidad Pontficia de Salamanca}{}{}{}
+\cventry{02/2009}{Curso de programación sobre Android}{Universidad Pontificia de Salamanca}{}{}{}
+\cventry{12/2009}{Curso de programación sobre Windows Mobile}{Universidad Pontificia de Salamanca}{}{}{}
+\cventry{01/2008}{Curso de programación sobre j2me}{Universidad Pontificia de Salamanca}{}{}{}
+\cventry{12/2007}{Mensajería y localización sobre Java (plataforma Tempos21)}{Universidad Pontificia de Salamanca}{}{}{}
+\cventry{11/2007}{Fundamentos sobre Java}{Universidad Pontificia de Salamanca}{}{}{}
+\cventry{12/2007--02/2008}{Curso de gestión de servidores Apache2}{Fundación Germán Sánchez Ruiperez}{}{}{}
+\cventry{12/2006--02/2007}{Curso de programación avanzada en PHP5}{Fundación Germán Sánchez Ruiperez}{}{}{}
+\cventry{07/2004--08/2004}{Técnico de seguridad en sistemas GNU/Linux}{Centro de formación profesional Tesdai}{}{}{}
+
+
+\section{Idiomas}
+\cvlanguage{Gallego}{\hbox{Idioma materno.}}{}
+\cvlanguage{Castellano}{\hbox{Idioma materno.}}{}
+\cvlanguage{Inglés}{\hbox{Muy bien lectura.}\\\hbox{Bien escrito.}\\\hbox{Medio oral.}}{}
+\cvlanguage{Portugués}{\hbox{Nivel comprensión.}}{}
+
+
+\section{Otros datos de interés}
+\cvline{1}{El BPS ha sido seleccionado como uno de los mejores proyecto I+D+i de Castilla y León por la Fundación Universidades.}
+\cvline{2}{Ponente en diversas charlas de temática informática y empresarial. A modo de ejemplo: charla sobre JME en Xuventude Galiza Net '09, a gestores de I+D+i en \hyphenation{ADEuropa}ADEuropa, o sobre FLOSS mediante CENATIC.}
+\cvline{3}{Creador de los CMS que se utilizó en \url{rianxosencabos.com}, \url{sanciprian.com} y \url{alex.rianxosencabos.com}.}
+\cvline{4}{Perteneciente a varias asociaciones como: AGNIX, RSC, GALPon\ldots}
+
+%\section{Tags}
+%\cvlistitem[]{python, django, php, mysql, html, c, c++, div, visual basic, bash scripting, j2me, j2se, javascript, android, windos mobile, iphone, melsec medoc, inkscape, gimp, corel draw, photoshop, flash, linux, windows, osx, freebsd, access, openoffice, hotspot, dns, firewall, samba, squid, apache, cyrus, squirrelmail, gtk, pygtk, gtkmozembed, mojo, webkit\ldots}
+
+\end{document}
