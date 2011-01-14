@@ -13,15 +13,15 @@ $ sudo aptitude install textlive-latex-extra lacheck latex-beamer latex-xcolor l
 
 Use
 ---
-# make little
+### make little
 
 This command will create a shortened CV without footnotes or obsolte courses.
 
-# make full
+### make full
 
 This command will create the full CV with all the courses and footnotes. It will use linespread 1.1 to get a 2 only PDF document.
 
-# make both
+### make both
 
 This commad will made the full and the little versions of the CV.
 
