@@ -17,12 +17,14 @@ Use
 
 This command will create a shortened CV without footnotes or obsolte courses.
 
-or
-
 # make full
 
 This command will create the full CV with all the courses and footnotes. It will use linespread 1.1 to get a 2 only PDF document.
 
+# make both
+
+This commad will made the full and the little versions of the CV.
+
 Result
 ------
-You can see now your CV cv_alexandre_gonzalez.pdf (edit Makefile to change this).
+You can see now your CV pdfs in this path (edit Makefile to change this).
