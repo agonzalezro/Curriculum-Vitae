@@ -15,15 +15,15 @@ Use
 ---
 ### make little
 
-This command will create a shortened CV without footnotes or obsolte courses.
+This command will create the shortened CVs without footnotes or obsolte courses.
 
 ### make full
 
-This command will create the full CV with all the courses and footnotes. It will use linespread 1.1 to get a 2 only PDF document.
+This command will create the full CVs with all the courses and footnotes. It will use linespread 1.1 to get a 2 only PDF document.
 
 ### make both
 
-This commad will made the full and the little versions of the CV.
+This commad will made the full and the little versions of the CVs.
 
 Result
 ------

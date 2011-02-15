@@ -10,31 +10,37 @@ both:
 
 little:
 	make copy
-	sed -i "s/\\\footnotemark//g" /tmp/cv.tex
+	sed -i "s/\\\footnotemark//g" /tmp/cv-es.tex
+	sed -i "s/\\\footnotemark//g" /tmp/cv-en.tex
 	make compile
 	make move_little
 	make clean
 
 full:
 	make copy
-	sed -i "s/\\\linespread{1.3}/\\\linespread{1.1}/" /tmp/cv.tex
-	sed -i "s/%full%//g" /tmp/cv.tex
+	sed -i "s/\\\linespread{1.3}/\\\linespread{1.1}/" /tmp/cv-es.tex
+	sed -i "s/\\\linespread{1.3}/\\\linespread{1.1}/" /tmp/cv-en.tex
+	sed -i "s/%full%//g" /tmp/cv-es.tex
+	sed -i "s/%full%//g" /tmp/cv-en.tex
 	make compile
 	make move_full
 	make clean
 
 copy:
-	cp cv.tex foto.jpg /tmp
+	cp cv-es.tex cv-en.tex foto.jpg /tmp
 
 move_full:
-	mv cv.pdf cv_alex_gonzalez_full.pdf
+	mv cv-es.pdf pdfs/cv_alex_gonzalez_es_completo.pdf
+	mv cv-en.pdf pdfs/cv_alex_gonzalez_en_full.pdf
 
 move_little:
-	mv cv.pdf cv_alex_gonzalez_little.pdf
+	mv cv-es.pdf pdfs/cv_alex_gonzalez_es_resumido.pdf
+	mv cv-en.pdf pdfs/cv_alex_gonzalez_en_little.pdf
 	
 compile:
-	pdflatex /tmp/cv
+	pdflatex /tmp/cv-es
+	pdflatex /tmp/cv-en
 	
 clean:
-	rm -rf cv.aux cv.log cv.out
-	rm /tmp/cv.tex /tmp/foto.jpg
+	rm -rf cv-*.aux cv-*.log cv-*.out
+	rm /tmp/cv-*.tex /tmp/foto.jpg

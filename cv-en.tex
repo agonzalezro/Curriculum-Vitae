@@ -1,0 +1,141 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+\linespread{1.3}
+
+\usepackage{url}
+\usepackage{hyperref}
+
+% classic, casual or empty
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[grey]{classic}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[english]{babel}
+\usepackage{datetime}
+\newcommand{\revision}{\twodigit\day\twodigit\month\the\year}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot[RE, RO]{\footnotesize{rev. \revision}}
+
+% adjust the page margins
+\usepackage[scale=.85]{geometry}
+\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Alex}
+\familyname{\color{addresscolor}González}
+%\title{revisión \revision}        % optional, remove the line if not wanted
+\address{c/ Miñagustín, 12, 2ºA}{37001 -- Salamanca -- España}    % optional, remove the line if not wanted
+\mobile{(+34) 659596991}                    % optional, remove the line if not wanted
+%\phone{(+34) 923995055}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{agonzalezro@gmail.com}                      % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[64pt]{foto}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{\footnotesize{
+    access, \textbf{ajax}, \textbf{android}, apache,
+    bash scripting,
+    \textbf{c}, \textbf{c++}, corel draw, \textbf{css}, cyrus,
+    div, \textbf{django}, dns,
+    firewall, flash, freebsd,
+    gimp, \textbf{git}, \textbf{gtk}, gtkmozembed,
+    hotspot, html,
+    inkscape, iphone,
+    \LaTeX,
+    \textbf{java}, j2me, \textbf{javascript},
+    \textbf{linux},
+    melsec medoc, \textbf{mercurial}, mojo, mysql,
+    openoffice, osx, photoshop,
+    \textbf{php}, pygtk, \textbf{python},
+    \textbf{rest},
+    samba, squid, squirrelmail, subversion,
+    visual basic,
+    webkit, windos mobile, windows\ldots
+}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%FIX footnote problems
+\makeatletter\newcommand\@makefntext[1]{\parindent 1em\noindent\hb@xt@1.8em{\hss\@makefnmark}#1}\makeatother
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+
+\section{Professional experience}
+\cventry{04/2010--Cur.}{Director tecnológico}{lukkom}{}{}{Web platform and REST API development, management consulting and secondary IT works.}
+
+\cventry{03/2009--04/2010}{Chief Executive Officer (CEO)}{mirblu S.L.}{}{}{Development in several languages: Python, PHP, Java, Bash Scripting and Visual Basic. And typicial business administration works.}
+
+\cventry{12/2008--06/2009, 12/2007--06/2008}{Movente Scholar}{Pontifical University of Salamanca (Spain) and Caja Duero Foundation\footnotemark}{}{}{Completion of a project project to mobile platforms developed with: j2me. A BPS (bluetooth position system) with path calculation between two points in a building.}
+%full%\footnotetext{Dra. Encarna Beato,  Movente projects coordinator. \href{mailto://ebeatogu@upsa.es}{\texttt{$<$ebeatogu@upsa.es$>$}}} 
+
+\cventry{10/2008--06/2009, 10/2005--06/2007}{Classroom scholar}{Pontifical University of Salamanca (Spain)\footnotemark}{}{}{Responsible for the proper use of UPSA computer rooms.\\Net laboratory scholar working in configure and install the new server.}
+%full%\footnotetext{Dr. Mariano Raboso, Collaboration scholars coordinator. \href{mailto://mrabosoma@upsa.es}{\texttt{$<$mrabosoma@upsa.es$>$}}}
+
+\cventry{07/2008}{Profesor}{PC Carrier\footnotemark}{}{}{Relational databases teacher working with OpenOffice.org at the Xunta de Galicia.}
+%full%\footnotetext{Sonia Sainz, teachers coordinator. \href{mailto://soniasainz@pcarrier.com}{\texttt{$<$soniasainz@pcarrier.com$>$}}}
+
+\cventry{10/2007--12/2008}{Tecnoduero scholar}{Caja Duero Foundation}{}{}{Teacher and technical support to the digital literacy of disadvantaged groups.}
+
+\cventry{06/2007--08/2007}{Campus Fórmate virtual classroom technical responsible and technical support to the classroom teaching infrastructure}{Matchmind S.L.\footnotemark}{}{}{Moodle LMS responsible working with classroom contents, css modifications, little PHP changes\ldots \\ Servers installations: Apache Tomcat, Subversion, exim4 with clamav, spamassasin, SquirrelMail, Firewall with Iptables and Squid\ldots}
+%full%\footnotetext{D. Arturo Pérez, training unit manager. \href{mailto://arperez@matchmind.es}{\texttt{$<$arperez@matchmind.es$>$}}}
+
+%full%\cventry{06/2006--07/2006}{Teacher}{Academia Universitaria}{}{}{Tuition in the C programming language to statistics students.}
+
+\cventry{03/2004--07/2004}{Technical practices}{Regox, servicios informáticos}{}{}{Administrator of business server (regox.net) and of tesdai.com, graphical design of advertising, equipment assembly, network cabling\ldots}
+
+
+\section{Formation}
+\subsection{Academic}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{09/2009--Cur.}{MSc Electronic Commerce}{University of Salamanca (Spain)}{}{}{}
+\cventry{10/2004--06/2009}{BSc Computer Science}{Pontifical University of Salamanca (Spain)}{}{}{}
+\cventry{07/2002--07/2004}{Higher level vocational training at computer systems management}{Tesdai}{}{}{}
+
+\subsection{Non academic}
+\cventry{10/2010--Cur.}{Certificación profesional en arquitectura de aplicaciones de contenidos digitales}{University of Salamanca (Spain)}{}{}{}
+\cventry{02/2009}{iPhone development}{Pontifical University of Salamanca (Spain)}{}{}{}
+\cventry{02/2009}{Android development}{Pontifical University of Salamanca (Spain)}{}{}{}
+\cventry{12/2009}{Windows Mobile development}{Pontifical University of Salamanca (Spain)}{}{}{}
+\cventry{01/2008}{J2ME development}{Pontifical University of Salamanca (Spain)}{}{}{}
+%full%\cventry{12/2007}{Messaging and location with Java (Tempos21 platform)}{Pontifical University of Salamanca (Spain)}{}{}{}
+%full%\cventry{11/2007}{Java foundations}{Pontifical University of Salamanca (Spain)}{}{}{}
+\cventry{12/2007--02/2008}{Apache2 management}{Germán Sánchez Ruiperez Foundation}{}{}{}
+\cventry{12/2006--02/2007}{PHP5 advanced development}{Germán Sánchez Ruiperez Foundation}{}{}{}
+\cventry{07/2004--08/2004}{GNU/Linux security technical}{Tesdai}{}{}{}
+
+
+\section{Idiomas}
+\cvlanguage{Galician}{\hbox{Mother tongue.}}{}
+\cvlanguage{Spanish}{\hbox{Mother tongue.}}{}
+\cvlanguage{English}{\hbox{Good reading. Good writing. Medium speaking.}}{}
+\cvlanguage{Portuguese}{\hbox{Understanding level.}}{}
+
+
+\section{Other interesting information}
+\cvline{1}{The BPS was selected as one of the best I+D project of Castilla y León by the Fundación Universidades.}
+\cvline{2}{Speaker in several business and technical talks. As a example: JME talk at Xuventude Galiza Net '09, to I+D+i managers at \hyphenation{ADEuropa}ADEuropa, or about FLOSS with CENATIC.}
+\cvline{3}{Developer of the CMS that people used at \url{rianxosencabos.com}, \url{sanciprian.com} and \url{alex.rianxosencabos.com}.}
+\cvline{4}{My last public repository at \url{github.com/agonzalezro}.}
+\cvline{5}{Cur.ve participant in several associations: AGNIX, RSC, GALPon.}
+
+%\section{Tags}
+%\cvlistitem[]{python, django, php, mysql, html, c, c++, div, visual basic, bash scripting, j2me, j2se, javascript, android, windos mobile, iphone, melsec medoc, inkscape, gimp, corel draw, photoshop, flash, linux, windows, osx, freebsd, access, openoffice, hotspot, dns, firewall, samba, squid, apache, cyrus, squirrelmail, gtk, pygtk, gtkmozembed, mojo, webkit\ldots}
+
+\end{document}
