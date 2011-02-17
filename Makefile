@@ -18,8 +18,9 @@ little:
 
 full:
 	make copy
-	sed -i "s/\\\linespread{1.3}/\\\linespread{1.1}/" /tmp/cv-es.tex
-	sed -i "s/\\\linespread{1.3}/\\\linespread{1.1}/" /tmp/cv-en.tex
+	#sed -i "s/\\\documentclass\[11pt/\\\documentclass\[10pt/" /tmp/cv-es.tex
+	sed -i "s/\\\linespread{1.1}/\\\linespread{1.2}/" /tmp/cv-es.tex
+	sed -i "s/\\\linespread{1.2}/\\\linespread{1}/" /tmp/cv-en.tex
 	sed -i "s/%full%//g" /tmp/cv-es.tex
 	sed -i "s/%full%//g" /tmp/cv-en.tex
 	make compile
