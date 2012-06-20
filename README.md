@@ -19,18 +19,17 @@ In order to compile my CV you must install moderncv.
 
 Use
 ---
-### make little
+### make es
 
-This command will create the shortened CVs without footnotes or obsolte courses.
+Generate the spanish version of the document.
 
-### make full
+### make en
 
-This command will create the full CVs with all the courses and footnotes. It will
-use linespread 1.1 to get a 2 only PDF document.
+Generate the english version of the document.
 
-### make both
+### make
 
-This commad will made the full and the little versions of the CVs.
+Generate both versions.
 
 Result
 ------
