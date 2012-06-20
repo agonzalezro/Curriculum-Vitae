@@ -9,7 +9,13 @@ Moderncv install
 ----------------
 In order to compile my CV you must install moderncv.
 
-$ sudo aptitude install textlive-latex-extra lacheck latex-beamer latex-xcolor lmodern luatex pgf prosper ps2eps tex-common texlive-base texlive-binaries texlive-common texlive-doc-base texlive-extra-utils texlive-font-utils texlive-generic-recommended texlive-latex-base texlive-latex-base-doc texlive-latex-recommended texlive-latex-recommended-doc texlive-luatex texlive-pstricks texlive-pstricks-doc texlive-latex-extra texlive-fonts-recommended lmodern
+    $ sudo aptitude install textlive-latex-extra lacheck latex-beamer
+    latex-xcolor lmodern luatex pgf prosper ps2eps tex-common texlive-base
+    texlive-binaries texlive-common texlive-doc-base texlive-extra-utils
+    texlive-font-utils texlive-generic-recommended texlive-latex-base
+    texlive-latex-base-doc texlive-latex-recommended
+    texlive-latex-recommended-doc texlive-luatex texlive-pstricks
+    texlive-pstricks-doc texlive-latex-extra texlive-fonts-recommended lmodern
 
 Use
 ---
@@ -19,7 +25,8 @@ This command will create the shortened CVs without footnotes or obsolte courses.
 
 ### make full
 
-This command will create the full CVs with all the courses and footnotes. It will use linespread 1.1 to get a 2 only PDF document.
+This command will create the full CVs with all the courses and footnotes. It will
+use linespread 1.1 to get a 2 only PDF document.
 
 ### make both
 
