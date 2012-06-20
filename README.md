@@ -1,8 +1,6 @@
 agonzalezro/Curriculum-Vitae
 ============================
-This is my CV. You can use the template to do your own CV with LaTeX+moderncv.
-
-This CV is distributed under GNU/GPL v2.0 or +.
+This is my CV. You can use the template to do your own CV with LaTeX + moderncv.
 
 
 Moderncv install
@@ -19,18 +17,17 @@ In order to compile my CV you must install moderncv.
 
 Use
 ---
-### make es
-
-Generate the spanish version of the document.
+With the command `make` you can generate the PDFs that will be stored on the
+`pdfs` path:
 
 ### make en
 
 Generate the english version of the document.
 
+### make es
+
+Generate the spanish version of the document.
+
 ### make
 
 Generate both versions.
-
-Result
-------
-You can see now your CV pdfs in this path (edit Makefile to change this).
