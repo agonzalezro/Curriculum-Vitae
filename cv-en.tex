@@ -1,9 +1,8 @@
-\documentclass[11pt, a4paper]{moderncv}
+\documentclass[10pt, a4paper]{moderncv}
 
-\linespread{1.1}
+\linespread{1.2}
 
 \usepackage{url}
-\usepackage{hyperref}
 
 % styles: blue (default), orange, red, green, grey, roman
 % layouts: classic or casual (default)
@@ -13,6 +12,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{datetime}
+
 \newcommand{\revision}{\twodigit\day\twodigit\month\the\year}
 
 \usepackage{fancyhdr}
@@ -27,22 +27,24 @@
 % personal data
 \firstname{Álex}
 \familyname{González}
-\address{Ebbingedwinger, 16}{9712 MA -- Groningen (Netherlands)}
-\mobile{(+31) 610 624 209}
+\address{Flat 17, Buckingham House}{Portland Rise, N4 2PZ -- London (UK)}
+\mobile{+44 74 4960 1002}
+\homepage{http://agonzalezro.github.io}
 \email{agonzalezro@gmail.com}
 
 \begin{document}
 \maketitle
 
-\section{Areas of interest}
-\cvline{}{Web development (backend \& frontend), APIs development \& consumption, mobile \hyphenation{development}development, usability, geopositioning, augmented reality and consulting.}
-
 \section{Professional experience}
-\cventry{May 2011--Cur.}{Developer}{Paylogic}{Netherlands}{}{Backend developer creating a new RESTful API that will be the entry point between mobile applications and all the Paylogic services and social networks. Sometimes I am working directly in Paylogic's backoffice.}
+\cventry{Apr 2013--Cur.}{Engineering Manager}{Green Man Gaming}{UK}{}{On this position I am having the chance of see the projects growing from the beginning. I am in charge of architect them with the team and keep track that all the task are being done properly and later, merge them. I develop too every time that I have ocassion and of course, I continue doing peer reviews.\\I was developing mainly with the Python and Golang languages, using several DB bakends: CouchDB, Redis, MySQL, PostgreSQL \& several framewors as could be: Flask, Django or Revel.}
 
-\cventry{Apr 2010--Jan 2011}{Technology responsible}{lukkom}{Spain}{}{Web platform and REST API development, management consulting and secondary IT works.}
+\cventry{Dec 2012--Apr 2013}{Software Engineer}{Green Man Gaming}{UK}{}{I was working in the several services that the company has to provide the shopping and social networking (we own playfire.com too) experience. Those services were mainly writting in Python, Scala and NodeJS. I was giving support in the CI and testing environment that we were growing at that time. Part of my work was doing code-reviews too.}
 
-\cventry{Mar 2009--Apr 2010}{Founder}{mirblu S.L.}{Spain}{}{Development in several languages: Python, PHP, Java, Bash Scripting and Visual Basic. Customer search. Business administration works.}
+\cventry{May 2011--Nov 2012}{Developer}{Paylogic}{Netherlands}{}{Backend developer creating a new RESTful API (Python, flask, PostgreSQL, celery\ldots) that will be the entry point between mobile applications and all the Paylogic services and social networks.\\Sometimes I am working directly in Paylogic's backoffice where I had the chance to use backbonejs apart of Django and others.}
+
+\cventry{Apr 2010--Jan 2011}{Technology responsible}{lukkom}{Spain}{}{Web platform and REST API development, management consulting and secondary IT works. All this project was created from scratch by me and I've decided to go with Python related techonologies: Django, django-piston, celery\ldots}
+
+\cventry{Mar 2009--Apr 2010}{Founder}{mirblu S.L.}{Spain}{}{Development in several languages: Python, PHP, Java, Bash Scripting and Visual Basic. Customer search. Business administration works.\\The main project of the Company was an indoor position system created with J2ME techonologies.}
 
 \cventry{2007--2009}{Movente scholar}{Pontifical University of Salamanca and Caja Duero Foundation}{Spain}{}{Development and research of a BPS (bluetooth position system) with path calculation between two points in a building. Part of a project for mobile platform developed with J2ME.}
 
@@ -73,42 +75,47 @@
 \cventry{2007 (2 months)}{PHP5 advanced development}{Germán Sánchez Ruiperez Foundation}{}{}{}
 \cventry{2004 (2 months)}{GNU/Linux security technical}{Tesdai}{}{}{}
 
-\section{Technologies}
+
+\section{Some of the recent technologies that I've been using}
 \cvline{}{
-    \textbf{ajax}, \textbf{android}, apache,
+    apache,
+    backbonejs,
     bash scripting,
-    \textbf{c}, \textbf{c++}, corel draw, \textbf{css}, cyrus,
-    \textbf{django}, dns,
-    firewall, flash, freebsd,
-    gimp, \textbf{git}, \textbf{gtk}, gtkmozembed,
-    hotspot, html,
-    inkscape, iphone,
-    \LaTeX, \textbf{linux},
-    \textbf{java}, j2me, \textbf{javascript},
-    \textbf{linux},
-    \textbf{mercurial}, mojo, mysql,
-    openoffice,
-    \textbf{php}, pygtk, \textbf{python},
-    \textbf{rest},
-    samba, squid, squirrelmail, subversion,
-    visual basic,
-    webkit, windows mobile\ldots
+    celery
+    couchdb,
+    css,
+    django,
+    docker,
+    emberjs,
+    flask,
+    git,
+    go,
+    html,
+    \LaTeX,
+    nginx,
+    javascript,
+    mercurial,
+    mysql,
+    postgres,
+    puppet,
+    redis,
+    tmux,
+    underscorejs
 }
 
 \section{Languages}
-\cvlanguage{Galician}{\hbox{Mother tongue.}}{}
-\cvlanguage{Spanish}{\hbox{Mother tongue.}}{}
-\cvlanguage{English}{\hbox{Good.}}{Currently I'm using it daily.}
-\cvlanguage{Portuguese}{\hbox{Understanding level.}}{}
+\cvlanguage{Galician}{Mother tongue.}{}
+\cvlanguage{Spanish}{Mother tongue.}{}
+\cvlanguage{English}{Good.}{}
+\cvlanguage{Portuguese}{Understanding level.}{}
+\cvlanguage{Italian}{Really basic understanding level.}{}
 
 
 \section{Other interesting information}
 \cvline{1}{The BPS was selected as one of the best I+D project of Castilla y León by the Fundación Universidades.}
-\cvline{2}{Speaker in several business and technical talks. As an example: JME talk at Xuventude Galiza Net '09, to I+D+i managers at \hyphenation{ADEuropa}ADEuropa, or about FLOSS with CENATIC.}
-\cvline{3}{Developer of the CMS that people used at \url{rianxosencabos.com}, \url{sanciprian.com} and \url{alex.rianxosencabos.com}.}
-\cvline{4}{My last public repository at \url{github.com/agonzalezro}.}
-\cvline{5}{Active participant in several associations: AGNIX, RSC, GALPon.}
-\cvline{6}{Promotor of the Python monthly meetings at Groningen.}
-\cvline{7}{Further information about my jobs on my LinkedIn profile: \url{linkedin.com/in/alexandregonzalezrodriguez}.}
+\cvline{2}{Speaker in several business and technical talks: J2ME talk at Xuventude Galiza Net '09, to I+D+i managers at \hyphenation{ADEuropa}ADEuropa, about FLOSS with CENATIC, Django, GTK\ldots}
+\cvline{3}{Some of my code is uplodad on my GH repo: \url{github.com/agonzalezro} and I have some gists too: \url{gists.github.com/agonzalero}.}
+\cvline{4}{I've started and organised for more than a year (until I moved) PyGrun monthly meetings, where we talked about Python projects every month.}
+\cvline{5}{You can find more detailed information about my jobs on my LinkedIn profile: \url{linkedin.com/in/alexandregonzalezrodriguez}.}
 
 \end{document}
