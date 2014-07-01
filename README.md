@@ -14,6 +14,7 @@ In order to compile my CV you must install moderncv.
     texlive-latex-base-doc texlive-latex-recommended
     texlive-latex-recommended-doc texlive-luatex texlive-pstricks
     texlive-pstricks-doc texlive-latex-extra texlive-fonts-recommended lmodern
+    texlive-lang-spanish
 
 Use
 ---
