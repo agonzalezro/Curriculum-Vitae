@@ -1,33 +1,20 @@
-agonzalezro/Curriculum-Vitae
-============================
-This is my CV. You can use the template to do your own CV with LaTeX + moderncv.
+My CV
+=====
 
+I am using LaTeX + moderncv to compile my CV, feel free of use this source as a
+template for yours.
 
-Moderncv install
-----------------
-In order to compile my CV you must install moderncv.
+Requirements
+------------
 
-    $ sudo aptitude install textlive-latex-extra lacheck latex-beamer
-    latex-xcolor lmodern luatex pgf prosper ps2eps tex-common texlive-base
-    texlive-binaries texlive-common texlive-doc-base texlive-extra-utils
-    texlive-font-utils texlive-generic-recommended texlive-latex-base
-    texlive-latex-base-doc texlive-latex-recommended
-    texlive-latex-recommended-doc texlive-luatex texlive-pstricks
-    texlive-pstricks-doc texlive-latex-extra texlive-fonts-recommended lmodern
+In order to compile my CV you must install moderncv & some other dependencies:
 
-Use
----
-With the command `make` you can generate the PDFs that will be stored on the
-`pdfs` path:
+    texlive-latex-extra texlive-fonts-recommended
 
-### make en
+Usage
+-----
 
-Generate the english version of the document.
+The command below is going to generate the PDF version of the CV under the path
+`pdfs/`:
 
-### make es
-
-Generate the spanish version of the document.
-
-### make
-
-Generate both versions.
+    make
