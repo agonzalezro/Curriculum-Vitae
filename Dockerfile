@@ -7,9 +7,6 @@ RUN apt-get update
 RUN apt-get -y install texlive-latex-extra texlive-fonts-recommended
 RUN apt-get clean
 
-ADD cv.tex cv.tex
-ADD Makefile Makefile
-
 VOLUME ["/output"]
 
-CMD ["pdflatex", "-output-dir=/output", "cv"]
+ENTRYPOINT ["pdflatex", "-output-dir=/output"]
