@@ -1,20 +1,11 @@
-My CV
-=====
+The source of my CV written using LaTeX + moderncv.
 
-I am using LaTeX + moderncv to compile my CV, feel free of use this source as a
-template for yours.
+How to build it?
+----------------
 
-Requirements
-------------
-
-In order to compile my CV you must install moderncv & some other dependencies:
-
-    texlive-latex-extra texlive-fonts-recommended
-
-Usage
------
-
-The command below is going to generate the PDF version of the CV under the path
-`pdfs/`:
+If you have docker installed:
 
     make
+
+If you don't you will need to manually install `texlive-latex-extra
+texlive-fonts-recommended` and later compile the document as usual.

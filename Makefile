@@ -1,7 +1,7 @@
 all:
-	pdflatex cv-en
-	mv cv-en.pdf pdfs/cv_alex_gonzalez_en.pdf
+	docker build -t agonzalezro/cv .
+	docker run --rm -v $(CURDIR):/output agonzalezro/cv
 	make clean
 
 clean:
-	rm -rf cv-*.aux cv-*.log cv-*.out
+	rm -f *.{aux,log,out}
