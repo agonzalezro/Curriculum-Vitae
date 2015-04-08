@@ -1,12 +1,12 @@
-\documentclass[10pt, a4paper]{moderncv}
+\documentclass[11pt, a4paper, sans]{moderncv}
 
-\linespread{1.2}
+\linespread{1.3}
 
 \usepackage{url}
 
 % colors: black, blue, green, grey, orange & purple
 % styles: banking, casual, classic & oldstyle
-\moderncvtheme[grey]{classic}
+\moderncvtheme[grey]{banking}
 
 % character encoding
 \usepackage[utf8]{inputenc}
@@ -27,29 +27,32 @@
 % personal data
 \firstname{Álex}
 \familyname{González}
-\address{Flat 17, Buckingham House}{Portland Rise, N4 2PZ -- London (UK)}
-\mobile{+44 74 4960 1002}
+
+\phone[mobile]{\texttt{+44 744 960 \{1,\}0 2}}
 \homepage{http://agonzalezro.github.io}
 \email{agonzalezro@gmail.com}
 
+\social[github]{agonzalezro}
+\social[twitter]{agonzalezro}
+\social[linkedin]{alexandregonzalezrodriguez}
+
 \begin{document}
-\maketitle
+\makecvtitle
 
 
 %
 % PROFESSIONAL EXPERIENCE
 %
 
-\section{Professional experience}
-\cventry{Oct 2014--Cur.}
+\cventry{Oct'14--Cur.}
 {Developer}
 {Shopa}{UK}{}
-{I am working with Go \& Rails applications to build a social marketplace. The
+{I am working with Go and Rails applications to build a social marketplace. The
 organisation of this company is completely flat so the decisions about
 architecture or techonologies are delegated to us. I am as well working with
 integration with some external companies.}
 
-\cventry{Apr 2013--Oct 2014}
+\cventry{Apr'13--Oct 2014}
 {Engineering Manager}
 {Green Man Gaming}{UK}{}
 {On this position I am having the chance of see the projects growing from the
@@ -57,10 +60,10 @@ beginning. I am in charge of architect them with the team and keep track that
 all the task are being done properly and later, merge them. I develop too every
 time that I have occasion and of course, I continue doing peer reviews.\\I was
 developing mainly with the Python and Golang languages, using several DB
-backends: CouchDB, Redis, MySQL, PostgreSQL \& several frameworks as could be:
+backends: CouchDB, Redis, MySQL, PostgreSQL and several frameworks as could be:
 Flask, Django or Revel.}
 
-\cventry{Dec 2012--Apr 2013}
+\cventry{Dec'12--Apr 2013}
 {Software Engineer}
 {Green Man Gaming}{UK}{}
 {I was working in the several services that the company has to provide the
@@ -69,7 +72,7 @@ services were mainly writing in Python, Scala and NodeJS. I was giving support
 in the CI and testing environment that we were growing at that time. Part of my
 work was doing code-reviews too.}
 
-\cventry{\hbox{May 2011--Nov 2012}}
+\cventry{May'11--Nov 2012}
 {Developer}
 {Paylogic}{Netherlands}{}
 {Backend developer creating a new RESTful API (Python, flask, PostgreSQL,
@@ -78,57 +81,36 @@ the Paylogic services and social networks.\\Sometimes I am working directly in
 Paylogic's backoffice where I had the chance to use backbonejs apart of Django
 and others.}
 
-\cventry{Apr 2010--Jan 2011}
+\cventry{Apr'10--Jan 2011}
 {Technology responsible}
 {lukkom}{Spain}{}
 {Web platform and REST API development, management consulting and secondary IT
 works. All this project was created from scratch by me and I've decided to go
 with Python related techonologies: Django, django-piston, celery\ldots}
 
-\cventry{Mar 2009--Apr 2010}
+\cventry{Mar'09--Apr 2010}
 {Founder}
 {mirblu S.L.}{Spain}{}
 {Development in several languages: Python, PHP, Java, Bash Scripting and Visual
 Basic. Customer search. Business administration works.\\The main project of the
-Company was an indoor position system created with J2ME techonologies.}
-
-\cventry{2007--2009}
-{Movente scholar}
-{Pontifical University of Salamanca and Caja Duero Foundation}{Spain}{}
-{Development and research of a BPS (bluetooth position system) with path
-calculation between two points in a building. Part of a project for mobile
-platform developed with J2ME.}
-
-\cventry{2008--2009, 2005--2007}
-{Classroom scholar}
-{Pontifical University of Salamanca}{Spain}{}
-{Responsible for the proper use of UPSA computer rooms.\\Net laboratory
-scholar, installation and configuration of a new server.}
-
-\cventry{2008 (1 month)}
-{Teacher}
-{PC Carrier}{Spain}{}
-{Relational databases teacher OpenOffice.org to ``Xunta de Galicia''.}
+Company was an indoor position system created with J2ME techonologies. The
+project was selected as one of the best I+D projects of Castilla y León.}
 
 \cventry{2007--2008}
-{Tecnoduero scholar}
-{Caja Duero Foundation}{Spain}{}
-{Teacher and technical support to digital literacy of disadvantaged groups.}
+{Teacher}
+{PC Carrier \& Caja Duero Foundation}{Spain}{}{}
 
 \cventry{2007 (2 months)}
-{Campus Fórmate virtual classroom technical responsible and technical support
-to the classroom teaching infrastructure}
-{Matchmind S.L.}{Spain}{}
-{Moodle LMS administrator: administration of classroom contents and custom
-adaptations (PHP \& CSS). \\ Servers installation and configuration: Apache
-Tomcat, Subversion, exim4 with clamav, spamassasin, SquirrelMail, Iptables,
-Squid\ldots}
+{Campus Fórmate Moodle (and ad-hoc techs) responsible}
+{Matchmind S.L.}{Spain}{}{}
+
+\cventry{2005--2009}
+{Movente \& Classroom scholar}
+{Pontifical University of Salamanca and Caja Duero Foundation}{Spain}{}{}
 
 \cventry{2004 (3 months)}
 {Technical practices}
-{Regox, servicios informáticos}{Spain}{}
-{Administration business server (regox.net \& tesdai.com), design of
-advertisement, equipment assembly, network cabling\ldots}
+{Regox, servicios informáticos}{Spain}{}{}
 
 
 %
@@ -150,14 +132,8 @@ advertisement, equipment assembly, network cabling\ldots}
 \cventry{2010--2011}
 {Professional certification in architecture of digital content applications}{University of Salamanca (Spain)}{}{}{}
 
-\cventry{Feb 2009}
-{iPhone development}{Pontifical University of Salamanca (Spain)}{}{}{}
-
-\cventry{Feb 2009}
-{Android development}{Pontifical University of Salamanca (Spain)}{}{}{}
-
-\cventry{Dec 2009}
-{Windows Mobile development}{Pontifical University of Salamanca (Spain)}{}{}{}
+\cventry{Dec'08--Feb 2009}
+{Android, iPhone and WM development}{Pontifical University of Salamanca (Spain)}{}{}{}
 
 \cventry{Jan 2008}
 {J2ME development}{Pontifical University of Salamanca (Spain)}{}{}{}
@@ -176,35 +152,19 @@ advertisement, equipment assembly, network cabling\ldots}
 %
 
 \section{Languages}
-\cvlanguage{Galician}{Mother tongue.}{}
-\cvlanguage{Spanish}{Mother tongue.}{}
-\cvlanguage{English}{Fluent.}{}
-\cvlanguage{Portuguese}{Understanding level.}{}
-\cvlanguage{Italian}{Really basic understanding level.}{}
+\cvdoubleitem{\textbf{Fluent}}{Galician, Spanish and English}{\textbf{Understanding level}}{Portuguese and Italian}
 
 %
 % MISC
 %
 
 \section{Other interesting information}
-\cvline{1}{I am co-organizer of the \url{golang.co.uk} conference. The first Go conference in UK.}
+\cvlistitem{Co-organizer of the \url{golang.co.uk} conference. The first Go
+conference in UK. Also started PyGrunn monthly at the Netherland and currently
+co-organizing the Go London User Group meetups.}
 
-\cvline{2}{I've started and organised for more than a year (until I moved)
-PyGrunn monthly meetings, where we talked about Python projects every month. In
-London I am co-organizing the Go London Meetup.}
-
-\cvline{2}{The BPS was selected as one of the best I+D project of Castilla y
-León by the Fundación Universidades.}
-
-\cvline{3}{Speaker in several biz and tech talks: J2ME talk at
+\cvlistitem{Speaker in several biz and tech talks: J2ME talk at
 XGN, to I+D+i managers at \hyphenation{ADEuropa}ADEuropa,
 about FLOSS with CENATIC, Django at DJUGL, GTK at Paylogic, Thrift at PyGrunn\ldots}
-
-\cvline{4}{You can find more detailed information about my jobs on my LinkedIn
-profile: \url{linkedin.com/in/alexandregonzalezrodriguez}.}
-
-\cvline{5}{Some of my code is uploaded on my GH:
-\url{github.com/agonzalezro} and I have some gists as well:
-\url{gists.github.com/agonzalero}.}
 
 \end{document}
