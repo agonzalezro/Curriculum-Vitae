@@ -1,6 +1,6 @@
 \documentclass[11pt, a4paper, sans]{moderncv}
 
-\linespread{1.1}
+\linespread{1.13}
 
 \usepackage{url}
 
@@ -21,7 +21,7 @@
 
 % adjust the page margins
 \usepackage[scale=.85]{geometry}
-\setlength{\hintscolumnwidth}{3cm}
+%\setlength{\hintscolumnwidth}{3cm}
 \AtBeginDocument{\recomputelengths}
 
 % personal data
@@ -29,7 +29,7 @@
 \familyname{González}
 
 \phone[mobile]{\texttt{+34 640 265 101}}
-\homepage{http://agonzalezro.github.io}
+\homepage{agonzalezro.github.io}
 \email{agonzalezro@gmail.com}
 
 \social[github]{agonzalezro}
@@ -37,116 +37,93 @@
 \social[linkedin]{alexandregonzalezrodriguez}
 
 \begin{document}
-\makecvtitle
-
+\makecvtitle\vspace{-2.5em}
 
 %
 % PROFESSIONAL EXPERIENCE
-%
+% 
 
-One of the parts I like the most about our field is its community scene, for that reason apart of my day to day job
-I spend some time organizing events such as \href{https://www.meetup.com/mad-scalability/}{madScalability} or
-the first \href{https://golanguk.com/}{Golang UK conference} as well as speaking in them,
-for example, I did that at \href{https://www.kubecon.io}{Kubecon}, \href{https://www.gophercon.co.uk/}{Gophercon} or \href{https://codemotionworld.com/}{Codemotion}.\\
-\\
-I also have some FLOSS projects that can be checked on \href{https://github.com/agonzalezro}{my GitHub profile}.
-To be fair, the most interesting work I did is mainly closed source but I keep myself updated doing some small contributions to interesting projects as \href{https://github.com/agonzalezro/cri-o}{cri-o}, \href{https://github.com/containers/image}{image} and others.
-When I had the opportunity of working professionally in the OpenSource space I did the Flocker plugin for Kubernetes: \href{https://github.com/kubernetes/kubernetes/pull/14328}{pr\#14328}.\\
+\cvitem[1.5em]{}{
+  \begin{center}
+  \textit{I'm interested in helping companies create products that solve real world problems. Technology is important to achieve that goal but my colleagues will be the main players in this equation, I will help them by providing organization and mentoring.}
+  \end{center}
+}
 
-\subsection{Professional experience}
-\cventry{Nov'16--Cur.}
-{BBVA Next (BBVA group)}
-{Head of Backend @ BBVA Next \& Team Lead @ BBVA CaaS}{Spain}{}
-{Working on a Containers As A Service project for the BBVA core banking processes.\\
-Our main concern as a team is to comply and enforce the different SLAs defined in our platform. Since our colleagues deploy high sensitive applications that move and manage money, the Platform not only has to work, it has to provide enough feedback for different teams to successfully run their applications.\\
-As a Team Lead, I’m in constant contact with the Product team. I work on technical definitions. I make sure that the code committed follows the high standards defined by business, manage and mentor fellow developers and I try to be as accessible as possible to the other business units.\\
-On the other hand, as Head of Backend in Next I am more related with managment tasks such as writing down the technical path for the company using assets as the Radar, preparation of interviews, collaborate on the promotions process or representing the company during introductions to possible collaborators.\\}
+\cventry{}{}
+{Head of Backend @ BBVA Next \& Team Lead @ BBVA}{Spain, Nov'16--Cur.}
+{}
+{\vspace{-1em}\textbf{As Team Lead at CaaS} (Containers as a Service) my focus resides in collaborating with the Product team and work out the technical definitions from there. To be able to do this I work/ed in creating and maintaining a high-performance team focused on results and 24x7 support to production at BBVA. We achieved a global, scalable, resilient and secure critical-mission service.\\
+We were able to achieve that using market-standard technologies (Go, Docker, Kubernetes, Openshift, Openstack, Prometheus, Fluentd, Ansible, ELK, Google Cloud, Hybrid deployments et al) and adding a lot of focus on quality, engineering process, mentoring and collaborating with 3rd party teams.\\
+The core team is distributed in Spain and Mexico and its size was fluctuating between fifteen and twenty colleagues.\\
+\textbf{As Head of Backend in Next} I am more related with management tasks such as writing down the technical path for the company using assets as the Radar, preparation of interviews, help with the promotions process or representing the company during introductions to possible new clients.\\}
 
-\cventry{Oct'15--Oct'16}
-{Jobandtalent}{Software architect}{Spain}{}
-{Working towards a migration to Docker services from development with
-  Docker Compose and internal tools (Go \& Ruby) all the way up to
-  production with ECS. Terraform and Packer were also involved here.\\
-  Started the migration to terraform infrastructure.\\
-Development of a geolocation service that consumes MaxMind DB, GMaps and
-internal data.\\
-Planning of the bounded context of the services in the new revision of the
-architecture and the new API guidelines.\\
-Investigation of possible future technology choices as grpc, terraform, GKE\ldots\\}
+\cventry{}{}
+{Software architect @ Jobandtalent}{Spain, Oct'15--Oct 2016}
+{}
+{\vspace{-1em}I have developed a Go service that consumes MaxMind, GMaps and internal data to offer geolocation information about our users. This service is still active and receiving millions of requests \textit{month-over-month}.\\
+I have been also involved in the efforts of moving our workloads (mainly Go \& Ruby) to Docker containers for development and production.
+In production we were using ECS automating everything with Terraform, Packer and others.\\
+In our movement to microservices I had to work with my colleagues from the architecture team on defining the bounded contexts for the new services and in certain guidelines for the new oncoming APIs. During this time I investigated some other approaches as grpc or GKE.\\}
 
-\cventry{Sept'15--Oct 2015}
-{Beyond Seeds Ltd}
-{Contractor}{UK}{}
-{I developed the Flocker plugin for Kubernetes (contracting with Jetstack). The resultant code is now part of the Kubernetes codebase.\\
-For another contract I developed a Python API to expose a NumPy/SciPy function. I made the deployment into Kubernetes (GKE).\\}
+\cventry{}{}
+{Founder @ Beyond Seeds}{UK, Sept'15--Oct 2015}
+{}
+{\vspace{-1em}I developed the Flocker plugin for Kubernetes (contracting with Jetstack). The resultant code is now part of the \href{https://github.com/kubernetes/kubernetes/pull/14328}{Kubernetes codebase}.\\
+For another contract I developed an API with Django to expose a model developed with NumPy/SciPy. This was deployed in Kubernetes using GKE.\\}
 
-\cventry{Oct'14--Sept 2015}
-{Shopa}
-{Developer}{UK}{}
-{I was working with Go and Rails applications to build a social marketplace. The
-organisation of this company was completely flat so the decisions about
-architecture or technologies were delegated to us. I was as well working with
-integration with some external companies.\\I was at the same time involved in
-devops work related with Ansible, Docker and AWS services.\\}
+\cventry{}{}
+{Software Engineer @ Shopa}{UK, Oct'14--Sept 2015}
+{}
+{\vspace{-1em}I was working with Go and Rails to create a social ecommerce. We were integrating with several external companies to sell their products and our users could create their outfits and sell them with us.\\
+I have been involved in development and architecture decisions mainly improving the ingestion rates and syncing of our partners' thousands of products using Go services.\\
+From the deployment point of view we were using Ansible, Docker and AWS services such as EC2, RDS or S3.\\}
 
-\cventry{Apr'13--Oct 2014}
-{Green Man Gaming}
-{Engineering Manager}{UK}{}
-{On this position I had the chance of see the projects growing from the
-beginning. I was in charge of architect them with the team and keep track that
-all the tasks were being done properly and later, merge them. I developed  as
-well every time that I had the occasion and of course, I did peer reviews.\\I
-was developing mainly with Python and Golang languages, using several DB
-backends: CouchDB, Redis, MySQL, PostgreSQL and several frameworks as could be:
-Flask, Django or Revel.\\}
+\cventry{}{}
+{Engineering Manager @ Green Man Gaming}{UK, Dec'12--Oct 2014}
+{}
+{\vspace{-1em}I was in charge of the team providing the social network experience of GMG: playfire.com. I was hands-on architecting with the team and keeping focus on the quality thanks to code-reviews and other techniques as pair programming but I was also in charge of organising the job in sprints.\\
+We were using a lot of different technologies depending on the service but some examples could be Go, Python, CouchDB, Redis, MySQL, Postgres, etc.\\
+The teams were liquid meaning that depending on the business focus for that sprint we could be around twenty working on my side: playfire.com or just three of us. For example, one of the tasks that involved a lot of people was working on the redesign of the platform or creating the Steam tracker using their API in order to be able to give rewards to our most prolific players.\\}
 
-\cventry{Dec'12--Apr 2013}
-{Green Man Gaming}
-{Software Engineer}{UK}{}
-{I was working in the several services that the company used to provide the
-shopping and social networking (we own playfire.com too) experience. Those
-services were mainly writing in Python, Scala and NodeJS. I was giving support
-in the CI and testing environment that we were growing at that time. Part of my
-work was doing code-reviews too.\\}
+\cventry{}{}
+{Developer @ Paylogic}{Netherlands, May'11--Nov 2012}
+{}
+{\vspace{-1em}I have worked in the Paylogic's backoffice (Django \& friends) collaborating in things such as the seating solution (i.e. select seats in a teather or cinema) but my main role there was working in a \textit{green-field} project (Flask \& friends) for providing a RESTful API for 3rd parties, this way they would be able to login with us (OAuth2) and buy tickets. This project was part of an initiative in order to provide the event organisers with \textit{one-click} mobile application using us as backend.\\}
 
-\cventry{May'11--Nov 2012}
-{Paylogic}
-{Developer}{Netherlands}{}
-{Backend developer creating a new RESTful API (Python, flask, PostgreSQL,
-celery\ldots) that was the entry point between the mobile applications and all
-the Paylogic services and social networks.\\Sometimes I was working directly in
-Paylogic's backoffice where I had the chance to use Django, backbone and others.\\}
+\cventry{}{}
+{Solo developer @ Lukkom}{Spain, Apr'10--Jan 2011}
+{}
+{\vspace{-1em}I have been the solo developer for a project that was trying to make networking in events easy. It was a \textit{green-field} and I decided to go with Python, Djando \& Celery doing the deployments in a non-managed server hired to a 3rd party company.\\
+Part of my role here was helping the founder talk with other providers as, for example, the company in charge of the Android and iOS apps that were consuming my API.\\}
 
-\cventry{Apr'10--Jan 2011}
-{lukkom}
-{Technology responsible}{Spain}{}
-{Web platform and REST API development, management consulting and secondary IT
-works. All this project was created from scratch by me and I've decided to go
-with Python related technologies: Django, django-piston, celery\ldots\\}
+\cventry{}{}
+{Founder @ Mirblu}{Spain, Mar'09--Apr 2010}
+{}
+{\vspace{-1em}We created a bluetooth indoor position system for J2ME devices. This project was selected as the second best I+D project of the autonomous community of Castilla y León in Spain.\\ As a founder part of my job was searching for new customers, business administration tasks and others.\\
+To "make it happen" we did consultancy to other companies doing several things, for example, I developed a BT ad system with Python, web pages with PHP, a C++ DLL for a tractor geolocation system, devops tasks with bash scripting\ldots\\}
 
-\cventry{Mar'09--Apr 2010}
-{mirblu S.L.}
-{Founder}{Spain}{}
-{Development in several languages: Python, PHP, Java, Bash Scripting and Visual
-Basic. Customer search. Business administration works.\\The main project of the
-Company was an indoor position system created with J2ME techonologies. This
-project was selected as one of the best I+D projects of Castilla y León.\\}
-
-\cventry{2004--2009}{}{Some other \textit{non-that-interesting} IT \& non-IT jobs}{Spain}{}{}
+\cventry{}{}{Some other \textit{non-that-interesting} IT \& non-IT jobs}{Spain, 2002--2009}{}{}
 
 %
 % EDUCATION
 %
 
 \subsection{Education}
-\cventry{2009--2011}
-{University of Salamanca}{MSc Electronic Commerce}{Spain}{}{}
+\cventry{}{}{MSc Electronic Commerce @ University of Salamanca}{Spain, 2009--2011}{}{}
+\vspace{-1em}
+\cventry{}{}{BSc Computer Science @ Pontifical University of Salamanca}{Spain, 2004--2009}{}{}
+\vspace{-1em}
+\cventry{}{}{Higher level vocational training at computer systems management @ Tesdai}{Spain, 2002--2004}{}{}
 
-\cventry{2004--2009}
-{Pontifical University of Salamanca}{BSc Computer Science}{Spain}{}{}
+%
+% MISCELLANEOUS
+%
 
-\cventry{2002--2004}
-{Tesdai}{Higher level vocational training at computer systems management}{Spain}{}{}
+\subsection{\\Other interesting information}
+
+\cvitem{}{Giving back to the community is important for me, for that reason I invest time organizing events such as \href{https://www.meetup.com/mad-scalability/}{madScalability}, the first \href{https://golanguk.com/}{Golang UK conference} or in the past \href{https://www.meetup.com/LondonGophers/}{London Gophers meetup} and PyGrunn monthly.}
+\cvitem{}{I also like speaking at events, for example, I did that at \href{https://www.kubecon.io}{Kubecon}, \href{https://www.gophercon.co.uk/}{Gophercon} or \href{https://codemotionworld.com/}{Codemotion}.}
+\cvitem{}{And I have FLOSS projects that can be checked on \href{https://github.com/agonzalezro}{github.com/agonzalezro}. I also contributed to interesting projects as \href{https://github.com/agonzalezro/cri-o}{cri-o}, \href{https://github.com/containers/image}{image}, \href{https://github.com/kubernetes/kubernetes/pull/14328}{Kubernetes} \& others.}
 
 %
 % LANGUAGES
