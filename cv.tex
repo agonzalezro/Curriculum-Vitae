@@ -1,6 +1,6 @@
 \documentclass[10pt, a4paper, sans]{moderncv}
 
-\linespread{1.16}
+\linespread{1.15}
 
 \usepackage{url}
 
@@ -20,12 +20,12 @@
 \fancyfoot[RE, RO]{\footnotesize{rev. \revision}}
 
 % adjust the page margins
-\usepackage[scale=.87]{geometry}
+\usepackage[scale=.89]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}
 \AtBeginDocument{\recomputelengths}
 
 % personal data
-\firstname{Álex}
+\firstname{\LARGE{Álex}}
 \familyname{González}
 
 \phone[mobile]{\texttt{+34 640 265 101}}
@@ -53,14 +53,17 @@
   \cventry{}{}{#1}{#2}{}{\vspace{-1em}#3}
 }
 
-\job{Software Engineer @ Auth0}
+\job{Staff Software Engineer @ Auth0 (by Okta)}
 {Remote, Feb'21--Cur.}
-{}
+{As Tech Lead and founding member of the IAM Core Crypto team, I have been an important part of the team creation, hiring, and discovery phase of the crypto needs for Auth0.
+We chose to go towards internal Crypto-as-a-service services that will improve our abilities with respect to key management and data compliance and also provide new capabilities such as Bring Your Own Key (BYOK) or Control Your Own Key (CYOK).
+As a tech lead, my main duties are tasks management, people mentorship, and design and development of performant GRPC backend services written in Go and consumed by Node.js services using our Typescript SDK.\\
+Moreover, I have had cross-team impact by being involved in closing deals with two big companies and also saved more than 100k\$ yearly costs in infrastructure without affecting the QoS.\\}
 
 \job{CTO @ Digien}
 {Spain, Aug'20--Nov'20}
-{My first task here was to put together the initial team, I end up hiring one PM and two engineers. In the meantime I participated in the product discovery phase and started working on the MVP.\\
-Technology-wise the seed of this product was a NextJS/React application consuming an API made with Phoenix using JSON Web Tokens (JWTs); Go for the workers and everything deployed on AWS.\\
+{I put together the initial team. In the meantime I participated in the product discovery phase and started working on the MVP.\\
+Technology-wise the seed of this product was a NextJS/React application consuming an API made with Elixir's Phoenix, Go for the workers \& everything deployed on AWS.\\
 Sadly COVID changed the plans and I didn't want to continue with the new conditions.\\
 }
 
@@ -150,6 +153,5 @@ To "make it happen" we did consultancy to other companies doing several things, 
 %
 
 \subsection{\\Languages}
-\cvdoubleitem{\textbf{Fluent}}{English, Spanish \& Galician}{\textbf{Understanding level}}{Portuguese}
-\cvitem{\textbf{Intermediate}}{Italian}
+\cvdoubleitem{\textbf{Fluent}}{English, Spanish \& Galician}{\textbf{Intermediate}}{Italian}
 \end{document}
