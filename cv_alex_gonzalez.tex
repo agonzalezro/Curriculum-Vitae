@@ -1,0 +1,172 @@
+\documentclass[11pt, a4paper, sans]{moderncv}
+\nopagenumbers 
+
+\linespread{1.03}
+
+\usepackage{url}
+
+% colors: black, blue, green, grey, orange & purple
+% styles: banking, casual, classic & oldstyle
+\moderncvtheme[grey]{banking}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+%\usepackage{datetime}
+
+\usepackage[T1]{fontenc}
+\usepackage[ttdefault=true]{AnonymousPro}
+
+%\newcommand{\revision}{\twodigit\day\twodigit\month\the\year}
+
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyfoot[RE, RO]{\footnotesize{rev. \revision}}
+
+% adjust the page margins
+\usepackage[scale=.95]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}
+\AtBeginDocument{\recomputelengths}
+
+% personal data
+\firstname{Álex}
+\familyname{González}
+
+%\phone[mobile]{\texttt{+34 640 265 101}}
+%\homepage{agonzalezro.github.io}
+\email{agonzalezro@gmail.com}
+
+%\social[github]{agonzalezro}
+%\social[twitter]{agonzalezro}
+\social[linkedin]{alexandregonzalezrodriguez}
+
+\begin{document}
+\makecvtitle\vspace{-2.5em}
+
+%
+% PROFESSIONAL EXPERIENCE
+% 
+
+%\cvitem[1.5em]{}{
+%  \begin{center}
+%  \textit{I am interested in helping companies create products that solve real world problems. Technology is important to achieve that goal but my colleagues will be the main players in this equation, I will help them by providing organization and mentoring.}
+%  \end{center}
+%}
+
+\vspace{10pt}
+
+\newcommand{\job}[3]{
+  \cventry{}{}{#1}{#2}{}{\vspace{-1em}#3}
+}
+
+\job{Senior Engineering Manager @ Okta CIC (aka Auth$\texttt 0$)}
+{Remote (Switzerland), Nov'22--Cur.}
+{I currently lead two high-performing teams: Core Pipeline \& Sessions; collaborating effectively with diverse stakeholders and creating and navigating complex roadmaps. For instance, while I was the manager for the Crypto(graphy) team, after building a Key Management System, this one has to be adopted company-wide becoming a core service involved in billions of requests. I coordinated efforts across twelve engineering teams, as well as Architecture, Security, TPMs, PMs, and other key functions. To effectively do so I built undeniable relationships with my key stakeholders while navigating the complexities across the twelve different teams.\\
+I also lead the merged on-call rota of the Core teams and the eventual delegation to the SRE teams.\\
+I prioritize mentorship and thoughtful delegation, empowering my teams to grow and thrive. My ultimate goal is to build resilient teams where I can become replaceable, fostering long-term sustainability.\\
+Beyond my core responsibilities, I contribute to the company’s hiring initiatives by leading outreach activities across Europe, helping attract and retain top talent.\\
+}
+
+\job{Staff Software Engineer @ Okta CIC (aka Auth$\texttt 0$)}
+{Remote (Switzerland), Feb'21--Nov'22}
+{As Tech Lead and founding member of the IAM Core Crypto team, I have been an important part of the team creation, hiring, and discovery phase of the cryptography needs for Auth0.\\
+For the discovery phase, I worked closely with peers and several stakeholders to understand what had to be built and if it was the correct product. After some pivots on the original strategy, we landed in a cloud-agnostic Key Management System (KMS) with enough novel features as to fill a patent (currently in review).\\
+For the hiring, culture was king, which paid off later by creating a cohesive and accountable team that managed to deliver.\\
+After the team was formed and the initial version developed I transitioned to be the Manager of the team.\\
+The performance of this project is measured in billions of operations.\\}
+
+\job{Advisor @ Tally}
+{Remote (Switzerland), Dec'22--Cur.}
+{Tally is a \textit{LegalTech} that helps foreign companies to start operating in México. I am part of the board and my advisory helps them define strategy, prioritize accordingly and solve medium to long-term business \& engineering bottlenecks.\\
+At the beginning, I also helped them hire the founding team and organize the engineering work. Tally operates with big clients such as Amazon \& Mercadolibre and is also starting operations in China.\\}
+%\job{CTO @ Digien}
+%{Spain, Aug'20--Nov'20}
+%{I put together the initial team. In the meantime I participated in the product discovery phase and started working on the MVP.\\
+%Technology-wise the seed of this product was a NextJS/React application consuming an API made with Elixir's Phoenix, Go for the workers \& everything deployed on AWS.\\
+%Sadly COVID changed the plans and I didn't want to continue with the new conditions.\\
+%}
+
+\job{Head of Backend @ BBVA Next \& Team Lead @ BBVA}
+{Spain \& Remote (Italy), Nov'16--Aug'20}
+{\textbf{As Team Lead at CaaS} (Containers as a Service), part of Architecture \& Global Deployment, my focus resided in collaborating with the Product team and work out the technical definitions from there. To be able to do this I worked in hiring and maintaining a high-performance team focused on results and 24x7 support to production at BBVA. We achieved a global, scalable, resilient and secure critical-mission (self-serviced thanks to the integration with the bank's IAM).\\
+We were able to achieve that using market-standard technologies and adding a lot of focus on quality, Software Development LifeCycle (SDLC), mentoring and collaborating with 3rd party teams as \textit{globaldevtools} (for pipelines), \textit{SECaaS} (for SAST \& container security review), pub/sub, storage.\\
+Different deployment models were provided depending on the needs of the of the other teams at the bank; some of them needed microservices with gRPC, some of them Java services in bare-metal or other combinations.\\
+The core team was distributed between Spain and Mexico and its size during my time there fluctuated between fifteen and twenty-four engineers.\\
+\textbf{As Head of Backend in Next} my work was more related with the technical quality of the consultancy-branch of the company writing down the technical path for the company using assets as the Radar, preparation of interviews, help with the promotions process or representing the company during introductions to possible new clients.\\}
+
+\job{Software architect @ Jobandtalent}
+{Spain, Oct'15--Oct 2016}
+{I provided tools that my colleagues could use to improve their customer service. Starting with a service for geolocation that was used intensively by several internal services (millions of requests per month), I also worked on a solution to improve the spin-up of dev environments.\\
+At that time Kubernetes was starting and even when we investigated it we went for AWS ECS; however, the work done by moving the workloads to containers helped the migration later.\\
+In our movement to microservices I worked with my colleagues from the architecture team on defining the bounded contexts for the new services and in certain guidelines for the new oncoming APIs.\\}
+
+\job{Founder @ Beyond Seeds}
+{UK, Sept'15--Oct 2015 (Contract)}
+{The highlight would be that I developed a storage plugin for Flocker in Kubernetes (contracting with Jetstack). The resultant code is still part of the \href{https://github.com/kubernetes/kubernetes/pull/14328}{Kubernetes codebase}. For another contract, I developed \& deployed an inference API with Python \& Django.\\}
+
+\job{Software Engineer @ Shopa}
+{UK, Oct'14--Sept 2015}
+{Shopas was a social e-commerce. I integrated with several external companies that sold the products that our consumers would use to create their outfits and sell them with our platform.\\
+The ingestion rate of those products was a problem I worked on.\\}
+
+\job{Engineering Manager @ Green Man Gaming}
+{UK, Dec'12--Oct 2014}
+{I was managing the team providing the social network experience of GMG: \url{playfire.com}. I was hands-on architecting with the team and keeping focus on the quality thanks to code-reviews and other techniques as pair programming but I was also in charge of organising the job to be done.\\
+The teams were liquid meaning that depending on the business focus for that sprint we could be around twenty people working on my side: playfire.com or just three of us.
+One of the tasks I am more proud of involved several members from the team to do a whole redesign of the site, another one worth mentioning is when we created the Steam tracker in order to be able to give economic rewards to our most prolific players.\\
+Another crucial part of my job here was hiring and mentoring more junior developers.\\}
+
+\job{Developer @ Paylogic}
+{Netherlands, May'11--Nov 2012}
+{Paylogic sold tickets. We wanted to provide \textit{white-label} mobile applications at the click of a button to our customers. To do so I worked in the seamless integration between the current Paylogic platform and the APIs I developed for the integration. Those APIs included an OAuth flow to allow the users to securely login with Paylogic from the mobile apps so they could buy tickets.\\}
+
+\job{Solo developer @ Lukkom}
+{Spain, Apr'10--Jan 2011}
+{I have been the solo developer for a project that was trying to make networking in events easier thanks to mobile apps, GPS and a matching algorithm.\\
+Part of my role here was helping the founder talk with other providers as, for example, the company in charge of the Android and iOS apps that were consuming the API.\\}
+
+\job{Founder @ Mirblu}
+{Spain, Mar'09--Apr 2010}
+{We created a bluetooth indoor position system for J2ME devices.
+This project won an award as one of the best I+D projects of the autonomous community of Castilla y León in Spain at the time. The system was a novelty at the time and we filled a patent: \href{https://patents.google.com/patent/ES2364367A1/es?inventor=alexandre+gonzalez&oq=alexandre+gonzalez}{ES200901756A}.\\
+As a founder in a small company I had several hats and we worked in several projects to try to continue afloat; one of the most interesting ones was a system to wireless control the different sectors of a sprayer attached to a tractor.\\}
+
+%\job{Some other \textit{non-that-interesting} IT \& non-IT jobs}
+%{Spain, 2002--2009}
+%{}
+
+%
+% EDUCATION
+%
+
+\newcommand{\education}[2]{
+  \cventry{}{}{#1}{#2}{}{}\vspace{-1em}
+}
+
+\subsection{Education}
+\education{MSc Artificial Intelligence @ University of La Rioja}{Spain, 2024--Cur.}
+\education{MSc Electronic Commerce @ University of Salamanca}{Spain, 2009--2011}
+\education{BSc Computer Science @ Pontifical University of Salamanca}{Spain, 2004--2009}
+\education{Higher level vocational training at computer systems management @ Tesdai}{Spain, 2002--2004}
+
+%
+% MISCELLANEOUS
+%
+
+\subsection{Other interesting information}
+\cvitem{}{I am a Google Certified Professional Cloud Architect, Certified Kubernetes Administrator \& AWS Certified Associate Solutions Architect. I also completed ThePowerMBA business program.}
+\cvitem{}{Giving back to the community is important for me. I organised several events in the past: \href{https://www.meetup.com/mad-scalability/}{madScalability}, \href{http://k8scd.es/}{Kubernetes Community Days Spain}, the first \href{https://golanguk.com/}{Golang UK conference} or  \href{https://www.meetup.com/LondonGophers/}{London Gophers meetup} and PyGrunn monthly. I try to do the same at Okta with my outreach activities.}
+\cvitem{}{I talk at events when I have something to say, for example, I talked about \href{https://www.youtube.com/watch?v=rYp97G6aE68}{"Building an Enterprise-ready Lambda Experience" (@ Kubecon)}, \href{https://www.youtube.com/watch?v=MuxkMzFVkKI}{"From source code to Kubernetes, a Continuous Deployment tale"} (@ Gophercon), \href{https://www.youtube.com/watch?v=-jabOQuPXEs}{"Fragmentación, el virus que puede acabar con tu alta disponibilidad"} (@ Commitconf) and others.}
+%\cvitem{}{And I have FLOSS projects that can be checked on \href{https://github.com/agonzalezro}{github.com/agonzalezro}. I also contributed to interesting projects as \href{https://github.com/cri-o/cri-o/pulls/agonzalezro}{cri-o}, \href{https://github.com/containers/image/pulls/agonzalezro}{image}, \href{https://github.com/kubernetes/kubernetes/pulls/agonzalezro}{Kubernetes} \& others.}
+
+%
+% LANGUAGES
+%
+
+\subsection{\\Languages}
+\cvdoubleitem{\textbf{Fluent}}{English, Spanish \& Galician}{\textbf{Intermediate}}{Italian}
+
+\subsection{\\Non-exhaustive list of technologies I used, helpful for keyword search}
+Ansible, AWS, CouchDB, CRI-O, Django, Docker, EC2, ELK, Fluentd, Flocker, GitHub, Google Cloud, GRPC, Hybrid, IaaS, IAM, J2ME, Java, Jenkins, Kubernetes, \LaTeX, Microservices, MySQL, OAuth, Openshift, Openstack, Packer, PostgreSQL, Prometheus, Python, Redis, RDS, Ruby, S3, SAST, SDLC, Terraform, Thrift, TypeScript\ldots
+\end{document}
+
